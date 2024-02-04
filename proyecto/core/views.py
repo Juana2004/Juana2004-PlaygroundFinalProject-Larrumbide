@@ -13,3 +13,6 @@ def persona_create(request):
     else:
         form = forms.PersonaForm()
     return render(request, "core/persona_create.html", {"form" : form })
+
+def about(request):
+    return render(request, 'core/about.html')
