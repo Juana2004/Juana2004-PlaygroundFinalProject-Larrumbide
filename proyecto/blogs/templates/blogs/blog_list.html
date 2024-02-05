@@ -2,16 +2,14 @@
 
 {% block title %}Lista de Blogs{% endblock %}
 
-{% block content %}
+{% block contenido %}
     <h1>Lista de Blogs</h1>
-    
     <ul>
         {% for blog in blogs %}
             <li>
                 <h2>{{ blog.title }}</h2>
                 <p>{{ blog.body }}</p>
-                <!-- Aquí puedes agregar más campos del modelo Blog que desees mostrar -->
             </li>
         {% endfor %}
     </ul>
-{% endblock %}
+{% endblock contenido %}
