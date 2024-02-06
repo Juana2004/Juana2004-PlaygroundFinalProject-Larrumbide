@@ -15,3 +15,5 @@ def create_blog(request):
     else:
         form = BlogForm()
     return render(request, 'blogs/create_blog.html', {'form': form})
+
+

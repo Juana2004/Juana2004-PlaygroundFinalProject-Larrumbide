@@ -1,11 +1,24 @@
 {% extends 'core/base.html' %}
-{% block contenido  %}
+
+{% block contenido %}
     <h2>Nuevo Blog</h2>
     <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Guardar</button>
+        {% csrf_token %}
+        <p>
+            <label for="id_title">Título:</label>
+            {{ form.title }}
+        </p>
+        <p>
+            <label for="id_body">Cuerpo:</label>
+            {{ form.body }}
+        </p>
+        <p>
+            <label for="id_author_id">Nombre del Autor:</label>
+            {{ form.author_id }}
+        </p>
+        <button type="submit">Guardar</button>
     </form>
-{% endblock contenido  %}
+{% endblock contenido %}
+
 
 
