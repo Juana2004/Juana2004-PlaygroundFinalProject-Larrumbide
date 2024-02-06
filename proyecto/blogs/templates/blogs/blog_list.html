@@ -8,6 +8,7 @@
         {% for blog in blogs %}
             <li>
                 <h2>{{ blog.title }}</h2>
+                <p>{{ blog.subtitle }}</p>
                 <p>{{ blog.body }}</p>
                 <p>Autor: {{ blog.author_id }}</p>
             </li>
