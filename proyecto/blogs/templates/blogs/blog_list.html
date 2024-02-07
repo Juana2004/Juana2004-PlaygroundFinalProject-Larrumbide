@@ -9,7 +9,9 @@
             <li>
                 <h2>{{ blog.title }}</h2>
                 <p>{{ blog.subtitle }}</p>
-                <p>{{ blog.body }}</p>
+                <!-- Aquí podrías mostrar solo un fragmento del cuerpo -->
+                <p>{{ blog.body|truncatechars:10 }}</p>
+                <a href="{% url 'detalle_blog' blog.id %}">Leer más</a> <!-- Agregar enlace a detalle_blog -->
                 <p>Autor: {{ blog.author_id }}</p>
                 <p>Fecha de creación: {{ blog.created_at }}</p> 
             </li>
