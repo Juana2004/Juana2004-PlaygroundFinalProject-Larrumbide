@@ -1,11 +1,15 @@
 {% extends 'core/base.html' %}
-
 {% block contenido %}
-    <h1>Blog</h1>
+    <h1 class="titulo">Juana's Blog</h1>
 
-    <button><a href="{% url 'persona_create' %}">Escribime!</a></button>
-    <button><a href="{% url 'about' %}">Acerca de mí</a></button>
-    <button><a href="{% url 'blog_list' %}">Ver Blogs</a></button>
-    <button><a href="{% url 'blog_create' %}">Crear nuevo blog</a></button>
+    <div class="botones-verticales">
+        <button><a href="{% url 'about' %}">Acerca de mí</a></button>
+        <button><a href="{% url 'persona_create' %}">Escribime!</a></button>
+    </div>
     
+    <div class="botones">
+        <button><a href="{% url 'blog_list' %}">Ver Blogs</a></button>
+        <button><a href="{% url 'blog_create' %}">Crear nuevo blog</a></button>
+    </div> 
 {% endblock contenido %}
+

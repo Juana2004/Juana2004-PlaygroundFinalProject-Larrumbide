@@ -1,0 +1,68 @@
+:root {
+    --color-titulo: #252323;
+    --color-botones: #8d94a3;
+    --color-botonesadicional: #70798c;
+    --color-letrasbotones: #ecdbfc;
+    --color-degradado1: #8d94a3;
+    --color-degradado2: #a4a9b5;
+    --color-fondopagina: #ecdbfc;
+}
+
+body {
+    background-color: var(--color-fondopagina); /* Color de fondo deseado */
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 40px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: var(--color-titulo); /* Color de texto personalizado */
+    margin-bottom: 30px; /* Espacio inferior entre el título y los botones */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    letter-spacing: 2px; /* Espacio entre caracteres */
+    /* Fondo degradado */
+    background-image: linear-gradient(to right, var(--color-degradado1), var(--color-degradado2));
+    
+}
+
+/* Estilos para el contenedor de los botones verticales */
+.botones-verticales {
+    margin-top: 20px; /* Espacio superior entre los botones verticales */
+    text-align: center; /* Centra los botones verticalmente */
+}
+
+/* Estilos para los botones */
+button {
+    display: block; /* Hace que los botones se muestren como bloques */
+    margin-bottom: 10px; /* Espacio vertical entre los botones */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-botones); /* Color de fondo verde */
+    color: var(--color-letrasbotones); /* Color de texto blanco */
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    width: 200px; /* Ancho fijo para los botones */
+    text-align: center; /* Centra el texto dentro de los botones */
+}
+
+/* Estilos para los enlaces dentro de los botones */
+button a {
+    color: var(--color-letrasbotones); /* Color de texto blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos adicionales para resaltar el botón cuando se pasa el mouse sobre él */
+button:hover {
+    background-color: var(--color-botonesadicional); /* Color de fondo verde más oscuro */
+}
+
+/* Estilos para el contenedor de los botones horizontales */
+.botones {
+    float: right; /* Coloca los botones en el lado derecho */
+    margin-top: 20px; /* Espacio superior entre los botones horizontales */
+}
+
