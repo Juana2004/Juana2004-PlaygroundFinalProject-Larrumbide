@@ -1,10 +1,24 @@
 {% extends 'core/base.html' %}
 
 {% block contenido %}
-    <form method="post">
+    <form method="post" class="formulario-persona">
         {% csrf_token %}
-        {{ form }}
-        <button type="submit">Enviar</button>
+        <div class="campo-formulario">
+            <label for="id_nombre">Nombre:</label>
+            {{ form.nombre }}
+        </div>
+        <div class="campo-formulario">
+            <label for="id_apellido">Apellido:</label>
+            {{ form.apellido }}
+        </div>
+        <div class="campo-formulario">
+            <label for="id_email">Email:</label>
+            {{ form.email }}
+        </div>
+        <div class="campo-formulario">
+            <label for="id_opinion">Opinión:</label>
+            {{ form.opinion }}
+        </div>
+        <button type="submit" class="boton-enviar">Enviar</button>
     </form>
-    
 {% endblock contenido %}
